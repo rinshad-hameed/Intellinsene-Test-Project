@@ -15,6 +15,7 @@ public class DashBoardPage {
 
 
 
+
     WebDriver driver;
 
     public DashBoardPage(WebDriver driver) {
@@ -33,4 +34,6 @@ public class DashBoardPage {
         Assert.assertTrue(fieldValue.toUpperCase().contains(value.toUpperCase()),"The added values is not matching");
         Thread.sleep(3000);
     }
+
+
 }

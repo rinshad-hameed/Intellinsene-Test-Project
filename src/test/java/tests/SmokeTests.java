@@ -26,7 +26,7 @@ public class SmokeTests extends TestBase {
     public void verifySearchResults() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
         SearchPage searchPage = new SearchPage(driver);
-        homePage.navigateToDashBoard();
+        //homePage.navigateToDashBoard();
         searchPage.verifySearchResults("stockpile");
         //    Assert.assertTrue(homePage.isCartPageLoaded());
     }
@@ -39,15 +39,26 @@ public class SmokeTests extends TestBase {
         //    Assert.assertTrue(homePage.isCartPageLoaded());
     }
     //Negative tests
-    @Test(priority=3)
+    @Test(priority=4)
     public void verifyInvalidLogin() throws InterruptedException {
         HomePage homePage = new HomePage(driver);
         homePage.signOutThePage();
         Thread.sleep(2000);
         LoginPage login = new LoginPage(driver);
-        login.login("menna+testproject@intellisense.io","123124123123");
+        login.login("menna+testproject1@intellisense.io","123124123123");
         login.verifyAlertMessage();
     }
+
+    @Test(priority=3)
+    public void verifyDuplicateDashboard() throws InterruptedException {
+        DashBoardPage dashPage = new DashBoardPage(driver);
+        HomePage homePage = new HomePage(driver);
+    //    homePage.navigateToDashBoard();
+        homePage.verifyDuplicateDashboard();
+
+    }
+
+
 
 
 
