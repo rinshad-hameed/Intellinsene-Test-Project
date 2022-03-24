@@ -24,7 +24,7 @@ public class DashBoardPage {
     @Step("verify adding singular data")
     public void verifyAddSingularData(String value) throws InterruptedException {
         driver.findElement(ADD_BUTTON).click();
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         driver.findElement(VALUE_BOX).sendKeys(value);
         Thread.sleep(3000);
         driver.findElement(SUBMIT_BUTTON).click();
