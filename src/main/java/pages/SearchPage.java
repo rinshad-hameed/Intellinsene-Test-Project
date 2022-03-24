@@ -28,11 +28,9 @@ public class SearchPage {
         Actions action = new Actions(driver);
         WebElement searchBox = driver.findElement(SEARCH_BOX);
         JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-// set the text
-        jsExecutor.executeScript("arguments[0].value='stockpile'", searchBox);
-//        searchBox.sendKeys(searchKey);
-//        action.sendKeys(searchBox,Keys.BACK_SPACE).build().perform();
-        //pass the product name that has to be searched in the website
+        // set value using javascript to handle text changed event
+        jsExecutor.executeScript("arguments[0].value='"+searchKey+"'", searchBox);
+
         Thread.sleep(3000);
         ((JavascriptExecutor) driver).executeScript(
                 "$(arguments[0]).change(); return true;"
