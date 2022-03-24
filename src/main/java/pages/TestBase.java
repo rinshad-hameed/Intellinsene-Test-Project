@@ -16,7 +16,6 @@ import java.util.concurrent.TimeUnit;
 public class TestBase {
 
     public static WebDriver driver;
-  //  String url = "https://reference-test.intellisense.io/";
     private final String propertyFilePath= "C://Users//rinsh//IdeaProjects//Intellinsene-Test-Project//configs//Configuation.properties";
     public static Properties properties;
 

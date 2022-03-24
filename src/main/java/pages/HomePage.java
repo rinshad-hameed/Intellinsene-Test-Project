@@ -2,10 +2,7 @@ package pages;
 
 import io.qameta.allure.Step;
 import org.openqa.selenium.*;
-import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
-
-import java.util.List;
 
 public class HomePage  extends TestBase{
     By dashboardIcon = By.xpath("(//li/a/i[@title='Dashboards'])[1]");

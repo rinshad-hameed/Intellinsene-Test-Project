@@ -3,11 +3,9 @@ package pages;
 import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.events.WebDriverListener;
+
 import org.testng.Assert;
 
-import java.util.Locale;
 
 public class DashBoardPage {
     By ADD_BUTTON = By.xpath("(//*[@id='data-input-add-icon-id'])[1]");
