@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="Smoke Test Suite">
+    <listeners>
+        <listener class-name="utils.TestListener" />
+    </listeners>
+    <test name="Smoke Test">
+        <parameter name="username" value="menna+testproject@intellisense.io" />
+        <parameter name="password" value="647-376-87c-34e-263-54b-96c-770-652-560-774-87c-435-221" />
+        <classes>
+            <class name="tests.SmokeTests" />
+        </classes>
+    </test>
+
+</suite>
